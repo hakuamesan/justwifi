@@ -28,11 +28,6 @@ along with the JustWifi library.  If not, see <http://www.gnu.org/licenses/>.
 #include <vector>
 #if defined(ARDUINO_ARCH_ESP32)
 #include <WiFi.h>
-#elif defined(ARDUINO_ARCH_ESP8266)
-#include <ESP8266WiFi.h>
-extern "C" {
-    #include "user_interface.h"
-}
 #else
 #error "Non supported architecture!"
 #endif

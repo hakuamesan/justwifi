@@ -185,12 +185,9 @@ uint8_t JustWifi::_populate(uint8_t networkCount) {
             if (ssid_scan.equals(entry->ssid)) {
 
                 // Check security
-                #if defined(ARDUINO_ARCH_ESP32)
-                    if ((sec_scan != WIFI_AUTH_OPEN) && (entry->pass == NULL)) continue;
-                #else
-                    if ((sec_scan != ENC_TYPE_NONE) && (entry->pass == NULL)) continue;
-                #endif
-
+                
+                if ((sec_scan != WIFI_AUTH_OPEN) && (entry->pass == NULL)) continue;
+                
                 // In case of several networks with the same SSID
                 // we want to get the one with the best RSSI
                 // Thanks to Robert (robi772 @ bitbucket.org)

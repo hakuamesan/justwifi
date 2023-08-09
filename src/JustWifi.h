@@ -2,8 +2,9 @@
 
 JustWifi 2.0.0
 
-Wifi Manager for ESP8266
+Wifi Manager for ESP32
 
+Copyright (C) 2023 - present by Hakuame
 Copyright (C) 2016-2018 by Xose Pérez <xose dot perez at gmail dot com>
 
 The JustWifi library is free software: you can redistribute it and/or modify

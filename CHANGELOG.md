@@ -3,6 +3,10 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.4] 2023-08-09
+### Removed
+- ESP8266 compatibility
+
 ## [2.0.3] 2020-03-26
 ### Added
 - ESP32 compatibility
